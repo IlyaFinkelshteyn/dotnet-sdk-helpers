@@ -1,0 +1,12 @@
+version: 1.0.{build}
+image:
+- Visual Studio 2017
+- Visual Studio 2015
+install:
+- cmd: |
+    set path=C:\projects\dotnet-sdk-helpers;%path%
+    dotnet .net
+    dotnet sdk list
+    dotnet --version
+build: off
+test: off
